@@ -1,0 +1,384 @@
+# Print Hello world!
+    
+
+print("Hello world!")
+
+# Python Variables
+    
+
+x = 3          # Numeric Types 
+y = "Three"    # Text Type 
+print(x)
+print(y)
+print(type(x))  
+print(type(y))
+
+# Length of a string
+
+x = "Hello world!"
+print(len(x))
+
+# Convert Lower-Upper and replace
+
+x = "Hello World!"
+print(x.lower())
+
+y = "Hello World!"
+print(y.upper())
+
+z= "Hello World!"
+print(z.replace("H", "M"))
+
+
+# Split
+
+x = "Hello World!"
+y = x.split(" ")
+print(y)
+
+print(y[0]) # first index
+print(y[1])
+
+# Python Lists
+
+# Create list
+
+a_list = ["Linear Regression", "Logistic Regression", "Decision Tree"]
+print(a_list)
+print(a_list[0]) # first index
+print(a_list[1])
+print(a_list[2]) # last index
+
+len(a_list)
+
+# Change value
+a_list[1] = "SVM"
+print(a_list[1]) # changed from watermelon to banana
+
+# Loop
+
+for i in a_list:
+    print (i)
+    
+    
+# Check item exist 
+
+if "SVMM" in a_list:
+    print(" yes")
+else:
+    print("no")
+
+# Add item - end of list APPEND 
+a_list = ["Linear Regression", "Logistic Regression", "Decision Tree"]
+
+a_list.append("SVM")
+print(a_list)
+len(a_list)
+
+# Add item any index INSERT
+a_list = ["Linear Regression", "Logistic Regression", "Decision Tree","SVM"]
+
+a_list.insert(0, "Naive Bayes")
+print(a_list)
+len(a_list)
+
+# Remove any - REMOVE
+a_list = ["Linear Regression", "Logistic Regression", "Decision Tree","SVM","Naive Bayes"]
+a_list.remove("SVM")
+print(a_list)
+len(a_list)
+
+# Remove last item - POP
+a_list = ["Linear Regression", "Logistic Regression", "Decision Tree","SVM"]
+a_list.pop()
+print(a_list)
+len(a_list)
+
+# Remove specified index - REMOVE
+a_list = ["Linear Regression", "Logistic Regression", "Decision Tree","SVM"]
+del a_list[0]
+print(a_list)
+len(a_list)
+
+# Remove all items - empty a list
+
+a_list = ["Linear Regression", "Logistic Regression", "Decision Tree","SVM","Naive Bayes"]
+a_list.clear()
+print(a_list)
+len(a_list)
+
+# Python Tuples
+
+# Create a tuple
+# A tuple is ordered and unchangeable.
+
+a_tuple = ("Linear Regression", "Logistic Regression", "Decision Tree","SVM","Naive Bayes")
+print(a_tuple)
+
+# Access items
+
+print(a_tuple[0])
+print(a_tuple[1])
+print(a_tuple[2])
+print(a_tuple[3])
+print(a_tuple[4])
+
+print(len(a_tuple))
+
+# Also for loop better way
+
+for i in a_tuple:
+    print(i)
+
+# Python Sets
+
+# Create a Sets
+# set list is unordered/random
+
+a_set = {"Linear Regression", "Logistic Regression", "Decision Tree","SVM","Naive Bayes"}
+print(a_set)
+
+# Loop
+for i in a_set:
+    print(i)
+
+# Add item
+a_set = {"Random Forest", "Gradient Boosting", "LightGBM"}
+a_set.add("Naive Bayes")
+print(a_set)
+len(a_set)
+
+# Add many items - UPDATE
+
+a_set.update(["kNN", "K-Means", "LightGBM"])
+print(a_set)
+len(a_set)
+
+# Remove items with REMOVE
+a_set = {"Random Forest", "Gradient Boosting", "LightGBM"}
+a_set.remove("SVM")
+print(a_set)
+len(a_set)
+
+# If the item to remove does not exist, remove() will raise an error.
+
+# Remove items with DISCARD
+a_set = {"Random Forest", "Gradient Boosting", "LightGBM"}
+a_set.discard("SVM")
+print(a_set)
+len(a_set)
+
+# Remove items with POP
+a_set = {"Linear Regression", "Logistic Regression", "Decision Tree","SVM","Naive Bayes"}
+lastItemRemoved = a_set.pop() # set list is random 
+print(lastItemRemoved)
+print(a_set)
+len(a_set)
+
+# Python Dictionaries
+
+a_dic = {
+  "Name": "Ismail",
+  "Surname": "OZBERK",
+  "birthyear": 1993
+}
+
+print(a_dic)
+len(a_dic)
+
+# Access items
+a_dic["Name"]
+a_dic["Surname"]
+a_dic["birthyear"]
+
+for i in a_dic:
+    print(i)
+
+# Change the value
+a_dic["birthyear"] = 1994
+print(a_dic)
+
+# Print key names and value names
+
+for i in a_dic:
+    print(i)
+for k in a_dic:
+    print(a_dic[k])
+
+# Print key names and value names same time
+for i,k in a_dic.items():
+    print(i,k)
+
+# add a item
+a_dic["gender"] = "male"
+print(a_dic)
+
+# remove a item
+a_dic.pop("birthyear")
+print(a_dic)
+
+# Python If - Else
+
+a = 5
+b = 10
+c = 15
+d = 20
+e = 25
+f = 30
+
+if a < b:
+    print("{} is lower than {}".format(a,b))
+elif d > c:
+    print("{} is greater than {}".format(d,c))
+else:
+    print("Something went wrong")
+    
+if d == e and f < a:
+    print("yes")
+else:
+    print("no")
+    
+if d%5==0 or f%3==0:
+    print("yes")
+else:
+    print("no")    
+
+# Python While
+
+a = 0
+while a < 21:
+  print(a)
+  if (a == 10):
+    break                # Break Statement
+  a += 2
+
+a = 0
+while a < 5:
+  a += 1
+  if a == 1:
+    continue         # Continue  Statement
+  print(a)
+
+# Python For Loop
+
+for i in range(0,10,2): # Even numbers 
+    print(i)
+else:
+  print("Done")    
+
+# Nested for loop
+
+letters1 = ["a","b","c"]
+letters2 = ["d","e","f"]
+ 
+for i in letters1:
+    for j in letters1:
+        print(i,j)
+
+# Functions
+
+# Creating
+def first_functions():
+    print("Hello World, This is python function")
+    
+first_functions()    
+
+# Return age
+def second_functions(age = 25):
+    print("I am {}".format(age) + " years old")
+
+second_functions(22)
+second_functions(33)
+second_functions(44)
+second_functions(55)
+
+second_functions() # default value = 25
+
+# squaring
+def third_functions(i):
+    return i**2
+
+print(third_functions(1))
+print(third_functions(2))
+print(third_functions(3))
+print(third_functions(4))
+print(third_functions(5))
+third_functions(10)
+
+def num_factorial(num):
+  fac = 1
+  if num < 0:
+    print("numbers must be positive")
+  elif num == 0:
+    print("The factorial of 0 is 1")
+  else:
+    for a in range(1, num + 1):
+        fac = fac * a
+    print("The factorial of",num,"is",fac)    
+    
+    
+num_factorial(-1)
+num_factorial(0)
+num_factorial(3)
+num_factorial(4)
+num_factorial(5)
+num_factorial(6)
+num_factorial(7)
+
+### lambda
+
+a = lambda x: x ** 2
+print(a(0))
+print(a(1))
+print(a(2))
+print(a(3))
+
+a = lambda x, y: x ** y
+print(a(2,4))         # 2x2x2x2 = 16
+print(a(3,4))         # 3x3x3x3 = 81
+
+a = lambda x, y, z: (x + y) ** z
+print(a(0,2,4))         # 16
+print(a(2,1,4))         # 81
+
+## Arrays
+
+mlAlgorithms = ["Linear Regression","Logistic Regression","Decision Tree","SVM","Naive Bayes",
+        "kNN","K-Means","Random Forest","Dimensionality Reduction Algorithms",
+        "GBM","XGBoost","LightGBM"]
+print(mlAlgorithms)
+
+print(mlAlgorithms[0])
+
+for i in mlAlgorithms:
+    print(i)
+print(len(mlAlgorithms))
+
+mlAlgorithms[0] = "CatBoost"
+print(mlAlgorithms[0])
+
+# add item 
+mlAlgorithms.append("CatBoost")
+print(mlAlgorithms[-1]) # last item in array
+
+mlAlgorithms.pop(-1) # remove last item 
+print(mlAlgorithms)
+
+## Classes and Objects
+
+class My_class():
+    name = "ismail"
+    
+a = My_class()    
+print(a.name)
+
+# __init__
+class ismail:
+  def __init__(self, lastname, age):
+    self.lastname = lastname
+    self.age = age
+
+a = ismail("OZBERK", 26)
+
+print(a.lastname)
+print(a.age)
