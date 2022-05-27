@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @iozberk
-- 👀 I’m interested in ML, DL
-- 🌱 I’m currently learning Computer Vision
+- 👀 I’m interested in Backend and ML
+- 🌱 I’m currently learning FastAPI
 - 📫 How to reach me iozberk.com
 
 <!---
