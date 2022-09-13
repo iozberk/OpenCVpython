@@ -3,7 +3,7 @@
 
 
 
-- 📫 Reach me **iozberks@gmail.com**
+- 📫 Reach me with e-mail **iozberks@gmail.com**
 
 
 <h3 align="left">Languages and Tools:</h3>
